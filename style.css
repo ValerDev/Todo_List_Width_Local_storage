@@ -25,6 +25,9 @@
 
 body{
     background-color: #282726;
+    overflow: hidden;
+    max-height: 100vh;
+    max-width: 100vw;
 }
 .container{
     width: 100%;
