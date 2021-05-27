@@ -1,7 +1,7 @@
 let todoData = JSON.parse(localStorage.getItem('allToDoes')) ? JSON.parse(localStorage.getItem('allToDoes')) : [];
 const addToDoItem = (event) => {
     event.preventDefault()
-    if(event.target){
+    if(event.target.children[0].value){
         todoData.push({text: event.target.children[0].value, id: Date.now(), checked: false})
         localStorage.setItem('allToDoes',JSON.stringify(todoData))
         createTodoItem(JSON.parse(localStorage.getItem('allToDoes')))
